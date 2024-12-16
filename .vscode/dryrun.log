@@ -1,0 +1,13 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/c/Users/Minal/Desktop/System_Homework'
+gcc -Wall -Wextra -std=c11 -c main.c -o main.o
+ 
+gcc -Wall -Wextra -std=c11 -c player.c -o player.o
+gcc -Wall -Wextra -std=c11 -c creature.c -o creature.o
+ 
+gcc -Wall -Wextra -std=c11 -c item.c -o item.o
+ 
+gcc -Wall -Wextra -std=c11 -c room.c -o room.o
+gcc -Wall -Wextra -std=c11 -o game main.o player.o creature.o item.o room.o
+make: Leaving directory '/c/Users/Minal/Desktop/System_Homework'
+ 
